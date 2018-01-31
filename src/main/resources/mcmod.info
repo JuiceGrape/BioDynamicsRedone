@@ -1,0 +1,22 @@
+[
+{
+    "modid" : "biodynamicsredone",
+    "name" : "BioDynamics Redone",
+    "version" : "0.1.0",
+    "credits" : "TODO",
+    "authorList" : [
+ "TODO"
+],
+    "authors" : [
+ "TODO"
+],
+    "description" : "A mod that adds a symbiotic relationship between technology and nature.",
+    "url" : "",
+    "updateUrl" : "",
+    "logoFile" : "",
+    "parent" : "",
+    "screenshots" : [
+	""
+     ]
+}
+]
