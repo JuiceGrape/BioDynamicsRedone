@@ -1,36 +1,32 @@
 BLOCKS:
 
 General:
-tile.battetree_core.name=Battetree Core
-tile.Mutatinator.name=Mutatinator
+tile.block_battetree_core.name=Battetree Core
 
 Enertree:
-tile.enertree_sapling.name=Enertree Sapling
-tile.enertree_leaves.name=Enertree Leaves
-tile.enertree_logs.name=Enertree Wood
-tile.enertree_planks.name=Enertree Planks
-tile.enertree_furnace.name=Enertree Furnace
+tile.block_enertree_sapling.name=Enertree Sapling
+tile.block_enertree_leaves.name=Enertree Leaves
+tile.block_enertree_log.name=Enertree Wood
+tile.block_enertree_planks.name=Enertree Planks
+tile.block_enertree_furnace.name=Enertree Furnace
 
 Soil:
-tile.energy_soil0.name=Redstone Soil
-tile.energy_soil1.name=tier2 soil
-tile.energy_soil2.name=tier3 soil
+tile.block_energy_soil0.name=Redstone Soil
+tile.block_energy_soil1.name=tier2 soil
+tile.block_energy_soil2.name=tier3 soil
 
 Generators:
-tile.solar_flower.name=SolarFlower
-tile.burning_flower.name=Burning Flower
+tile.block_solar_flower.name=SolarFlower
+tile.block_burning_flower.name=Burning Flower
 
 Material blocks:
-tile.pink_diamond_block.name=Block of Pink Diamond
-tile.organic_iron_block.name=Block of Organic Iron
-tile.organic_gold_block.name=Block of Organic Gold
-
-Cables:
-tile.energy_cable.name=Enertree Cable (INDEV, MIGHT CRASH)
+tile.block_pink_diamond.name=Block of Pink Diamond
+tile.block_organic_iron.name=Block of Organic Iron
+tile.block_organic_gold.name=Block of Organic Gold
 
 Fluids:
-tile.redstonewater.name=Redstone Water
-fluid.redstonewater=Redstone Water
+tile.fluid_redstonewater.name=Redstone Water
+fluid.fluid_redstonewater=Redstone Water
 
 
 -----------------------------------------------
@@ -38,25 +34,19 @@ ITEMS:
 
 General:
 item.redstonewater_bucket.name=Redstone Water Bucket
-item.pestle.name=Diamond tipped Pestle
-item.mortar_and_pestle.name=Mortar and Pestle
-
-Bonemeals:
-item.specialbonemeal0.name=Redstone Bonemeal
-item.specialbonemeal1.name=Gold Bonemeal
 
 Minerals:
-item.pink_diamond.name=Pink Diamond
-item.organic_iron_ingot.name=Organic Iron Ingot
-item.organic_iron_nugget.name=Organic Iron Nugget
-item.organic_gold_ingot.name=Organic Gold Ingot
-item.organic_gold_nugget.name=Organic Gold Nugget
+item.gem_pink_diamond.name=Pink Diamond
+item.ingot_organic_iron.name=Organic Iron Ingot
+item.nugget_organic_iron.name=Organic Iron Nugget
+item.ingot_organic_gold.name=Organic Gold Ingot
+item.nugget_organic_gold.name=Organic Gold Nugget
 
 Dusts:
-item.organic_iron_dust.name=Organic Iron Dust
-item.organic_gold_dust.name=Organic Gold Dust
-item.iron_dust.name=Iron Dust
-item.gold_dust.name=Gold Dust
+item.dust_organic_iron.name=Organic Iron Dust
+item.dust_organic_gold.name=Organic Gold Dust
+item.dust_iron.name=Iron Dust
+item.dust_gold.name=Gold Dust
 
 Armour:
 item.organic_iron_helmet.name=Organic Iron Helmet
@@ -97,4 +87,4 @@ item.pink_diamond_axe.name=Pink Diamond Axe
 ------------------------------------------------------------
 
 Misc:
-itemGroup.biodynamics=BioDynamics
+itemGroup.biodynamicsredone=BioDynamics Redone
