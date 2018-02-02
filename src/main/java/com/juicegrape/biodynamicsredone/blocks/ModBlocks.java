@@ -13,7 +13,6 @@ public class ModBlocks {
 
     public static BlockMetal organicIronBlock = new BlockMetal("block_organic_iron", 5f, 30f);
     public static BlockMetal organicGoldBlock = new BlockMetal("block_organic_gold", 3f, 30f);
-    public static BlockMetal pinkDiamondBlock = new BlockMetal("block_pink_diamond", 5f, 30f);
 
     public static BlockEnertreeSapling enertreeSaplingBlock = new BlockEnertreeSapling("block_enertree_sapling");
     public static BlockEnertreeLog enertreeLog = new BlockEnertreeLog("block_enertree_log");
@@ -23,7 +22,6 @@ public class ModBlocks {
         event.getRegistry().registerAll(
                 organicIronBlock,
                 organicGoldBlock,
-                pinkDiamondBlock,
                 enertreeSaplingBlock,
                 enertreeLog
         );
@@ -35,7 +33,6 @@ public class ModBlocks {
         event.getRegistry().registerAll(
                 organicIronBlock.createItemBlock(),
                 organicGoldBlock.createItemBlock(),
-                pinkDiamondBlock.createItemBlock(),
                 enertreeSaplingBlock.createItemBlock(),
                 enertreeLog.createItemBlock()
         );
@@ -46,7 +43,6 @@ public class ModBlocks {
     {
         organicIronBlock.registerItemModel(Item.getItemFromBlock(organicIronBlock));
         organicGoldBlock.registerItemModel(Item.getItemFromBlock(organicGoldBlock));
-        pinkDiamondBlock.registerItemModel(Item.getItemFromBlock(pinkDiamondBlock));
         enertreeSaplingBlock.registerItemModel(Item.getItemFromBlock(enertreeSaplingBlock));
         enertreeLog.registerItemModel(Item.getItemFromBlock(enertreeLog));
     }

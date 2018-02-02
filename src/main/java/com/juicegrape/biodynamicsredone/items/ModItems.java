@@ -24,7 +24,7 @@ public class ModItems {
     public static ItemBase organicGoldDust = new ItemBase("dust_organic_gold");
     public static ItemBase goldDust = new ItemBase("dust_gold");
 
-    public static ItemBase pinkDiamond = new ItemBase("gem_pink_diamond");
+    public static ItemPinkDiamond pinkDiamond = new ItemPinkDiamond("gem_pink_diamond");
 
 
     @SubscribeEvent
