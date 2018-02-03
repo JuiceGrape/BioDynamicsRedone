@@ -19,6 +19,9 @@ public class BlockEnertreeSapling extends BlockBush implements IGrowable
 {
     public String name;
 
+    private int maxHeight = 5;
+    private int minHeight = 2;
+
     public BlockEnertreeSapling(String name)
     {
         super(Material.GRASS);
@@ -53,7 +56,46 @@ public class BlockEnertreeSapling extends BlockBush implements IGrowable
 
     @Override
     public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-        BioDynamicsRedone.logger.info("TEST");
+        if (worldIn.isRemote) {
+            return;
+        }
+        int height = 0;
+        for (int i = 1; i <= this.maxHeight + 1; i++) {
+
+            if (worldIn.isAirBlock(pos.add(0, i, 0))) {
+                if (height + 1 == i) {
+                    height = i;
+                }
+            }
+        }
+        if (height + 1 < minHeight) {
+            return;
+        }
+
+        int growHeight;
+
+        if (height - minHeight > 0) {
+            growHeight = minHeight + worldIn.rand.nextInt(height - minHeight);
+        } else {
+            growHeight = minHeight;
+        }
+
+
+        for (int i = 0; i < growHeight; i ++) {
+            worldIn.setBlockState(pos.add(0, i,0), ModBlocks.enertreeLog.getDefaultState());
+        }
+
+        for (int i = -1; i <= 0; i ++) {
+            for (int j = -1; j <= 1; j++) {
+                if (worldIn.isAirBlock(pos.add(j, growHeight - 1 + i,0)))
+                    worldIn.setBlockState(pos.add(j, growHeight - 1 + i, 0), ModBlocks.enertreeLeaves.getDefaultState());
+
+                if (worldIn.isAirBlock(pos.add(0, growHeight - 1 + i, j)))
+                    worldIn.setBlockState(pos.add(0, growHeight - 1 + i, j), ModBlocks.enertreeLeaves.getDefaultState());
+            }
+        }
+        if (worldIn.isAirBlock(pos.add(0, growHeight, 0)))
+            worldIn.setBlockState(pos.add(0, growHeight, 0), ModBlocks.enertreeLeaves.getDefaultState());
     }
 
     @Override

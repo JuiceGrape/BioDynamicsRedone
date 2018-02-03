@@ -1,6 +1,5 @@
 package com.juicegrape.biodynamicsredone.blocks;
 
-import com.juicegrape.biodynamicsredone.BioDynamicsRedone;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -16,6 +15,7 @@ public class ModBlocks {
 
     public static BlockEnertreeSapling enertreeSaplingBlock = new BlockEnertreeSapling("block_enertree_sapling");
     public static BlockEnertreeLog enertreeLog = new BlockEnertreeLog("block_enertree_log");
+    public static BlockEnertreeLeaves enertreeLeaves = new BlockEnertreeLeaves("block_enertree_leaves");
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -23,7 +23,8 @@ public class ModBlocks {
                 organicIronBlock,
                 organicGoldBlock,
                 enertreeSaplingBlock,
-                enertreeLog
+                enertreeLog,
+                enertreeLeaves
         );
     }
 
@@ -34,7 +35,8 @@ public class ModBlocks {
                 organicIronBlock.createItemBlock(),
                 organicGoldBlock.createItemBlock(),
                 enertreeSaplingBlock.createItemBlock(),
-                enertreeLog.createItemBlock()
+                enertreeLog.createItemBlock(),
+                enertreeLeaves.createItemBlock()
         );
     }
 
@@ -45,5 +47,6 @@ public class ModBlocks {
         organicGoldBlock.registerItemModel(Item.getItemFromBlock(organicGoldBlock));
         enertreeSaplingBlock.registerItemModel(Item.getItemFromBlock(enertreeSaplingBlock));
         enertreeLog.registerItemModel(Item.getItemFromBlock(enertreeLog));
+        enertreeLeaves.registerItemModel(Item.getItemFromBlock(enertreeLeaves));
     }
 }
